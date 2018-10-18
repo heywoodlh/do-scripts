@@ -11,8 +11,4 @@ read DROPLET_ID
 
 clear
 printf "\n"
-echo 'Selection: '
-echo "$DROPLET_LIST" | grep "$DROPLET_ID"
-
-printf "\n"
 doctl compute droplet-action power-on "$DROPLET_ID"
