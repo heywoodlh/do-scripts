@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 clear
-DROPLET_LIST="$(doctl compute snapshot list)"
+SNAPSHOT_LIST="$(doctl compute snapshot list)"
 echo 'Current snapshots: '
 echo "$SNAPSHOT_LIST"
 
