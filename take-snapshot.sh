@@ -13,6 +13,6 @@ echo 'Selection: '
 echo "$DROPLET_LIST" | grep "$DROPLET_ID"
 
 echo 'Snapshot name: '
-read "$NAME"
+read NAME
 
 doctl compute droplet-action snapshot "$DROPLET_ID" --snapshot-name "$NAME"
